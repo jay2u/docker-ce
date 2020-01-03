@@ -115,7 +115,7 @@ func confirmationMessage(dockerCli command.Cli, options pruneOptions) string {
 		warnings = append(warnings, "all volumes not used by at least one container")
 	}
 	if options.all {
-		warnings = append(warnings, "all images without at least one container associated to them")
+		warnings = append(warnings, "all images without at least one container associated with them")
 	} else {
 		warnings = append(warnings, "all dangling images")
 	}
